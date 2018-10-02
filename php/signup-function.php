@@ -18,7 +18,7 @@ $sql = "INSERT INTO users (fname,lname,email,uname,pwd) VALUES ('$uname','$lname
 
 mysqli_query($conn,$sql);
 
-    header("location: ../signup.php");
+    header("location: ../login-page.php");
     echo "Succesfully created an account!";
 } else {
 echo "There's an error while inserting data to database";
