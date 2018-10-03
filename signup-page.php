@@ -45,7 +45,7 @@ require 'include/bootstrap.php';
                             <input class = "form-control" type = "password" placeholder = "Password" name = "pwd" required>
                         </div>
                         <div class = "form-group">
-                            <button type = "submit" class = "btn btn-default btn-block" name = "register-user">REGISTER</button>
+                            <button type = "submit" class = "btn btn-primary btn-block" name = "register-user">REGISTER</button>
                         </div>
                         <p>Already have an account? Login <a href = "login-page.php">here</a>!</p>
                     </form>

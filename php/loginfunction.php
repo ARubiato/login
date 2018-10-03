@@ -13,9 +13,11 @@ if(isset($_POST['uname']) and isset($_POST['pwd'])) {
 
     if(password_verify($pwd,$data['pwd'])) {
         $_SESSION['uname'] = $uname;
+        
 
         header('Location:../index.php');
     } else {
+        header('location:../login-page.php');
         echo "Invalid login credentials!";
     }
 
