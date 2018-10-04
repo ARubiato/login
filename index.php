@@ -17,14 +17,15 @@ require 'include/header.php';
 </head>
 <body>
     <div class = "container">
-        <div class = "card col-lg-12">
+       <div class = "card">
             <div class = "card-body">
-                <div class = "form-group col-lg-6">
-                    <input type = "text" class = "form-control" name = "#">
-                </div>
+            <div class = "card-title">
+                <h4>Latest posts</h4>
             </div>
-        </div>
+            
+            </div>
+       </div>
     </div>
-
+    
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 require 'php/server.php';
-require 'include/bootstrap.php';
 require 'include/header.php';
+require 'include/bootstrap.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,20 +11,21 @@ require 'include/header.php';
 </head>
 <body>
 	<div class = "container-fluid">
-	<form method="post">
+	<form method="post" action = "php/cpost-function.php">
 		<div class = "card">
 			<div class = "card-body col-lg-6">
 				<div class  = "card-title">
-					Create a post!
+					<h3>Create a post</h3>
 				</div>
+				<hr>
 				<div class = "form-group">
 					<label>Title</label>
-					<input type="text" name="P_TITLE" class="form-control" placeholder="Title of your post">
+					<input type="text" name="PO_Title" class="form-control" placeholder="Title of your post">
 				</div>
 
 				<div class = "form-group">
 					<label>Description</label>
-					<textarea class = "form-control rounded-0" style = "resize: none;" rows = "4" placeholder="Enter text here..."></textarea>
+					<textarea class = "form-control rounded-0" name = "PO_Desc" style = "resize: none;" rows = "5" placeholder="Enter text here..."></textarea>
 				</div>
 
 				<div class = "form-group">
@@ -34,5 +35,6 @@ require 'include/header.php';
 		</div>
 	</form>
 	</div>
+
 </body>
 </html>
